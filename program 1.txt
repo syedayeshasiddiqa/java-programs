@@ -1,0 +1,23 @@
+import java.util.*;
+   public class Java5
+{
+           public static void main(String[] args) 
+          {
+               double temp;
+               Scanner sc=new Scanner (System.in);
+               int t=sc.nextInt();
+               for (int i=0;i<t;i++)
+               {
+                      int a=sc.nextInt();
+                      int b=sc.nextInt();
+                      int n=sc.nextInt();
+                      temp=0.0;
+                      for (int j=0;j<n;j++)
+                      {
+                             temp=temp+(Math.pow(2,j)*b);
+                             System.out.printf(a+(int)temp+" ");
+                      }
+                          System.out.println();
+                }
+          }
+        } 

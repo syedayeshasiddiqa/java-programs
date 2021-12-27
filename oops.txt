@@ -1,0 +1,94 @@
+From Navaneethan SME to Everyone 04:59 AM
+import java.util.*;                         
+
+class VintageCar {
+
+    public void fly(){
+        System.out.println("Im flying...!");
+    }
+}
+
+class Car extends VintageCar {  // Super Class / Parent Class
+
+    public String patentID = "31k31321j3h1kj31l";
+
+    public void accelerate(){   // method
+        System.out.println("Accelerating.....the car to 40 kmph in 10 secs !");
+    }
+}
+
+public class BMWCar extends Car 
+{  
+    String patentID = "456j3n35353530";
+
+    public void getPatentID(){
+        System.out.println(super.patentID);
+    }
+    public static void main(String[] args){
+      
+        BMWCar bmw = new BMWCar();
+        
+    }
+}
+From Navaneethan SME to Everyone 05:19 AM
+import java.util.*;                         
+// Compile Time - Polymorphism
+
+public class Calculator
+{  
+    // Methods - Method Overloading 
+        // method name and return type - should always be same 
+        // You can increase / decrease the number of arguments
+        // You can change the order of arguments
+        // You can change the data type of arguments
+
+    public int add(int x, int y){
+        return x + y;
+    }
+
+    public int add(double x, double y){
+        return (int)(x + y);
+    }
+
+    public int add(int x, int y, int z){
+        return x + y + z;
+    }
+
+    public int add(double x, int y){  // 3.14  , 5 = 8.14 --- > 8
+        return (int)(x + y);
+    }
+
+    public int add(int x, double y){  // 3.14  , 5 = 8.14 --- > 8
+        return (int)(x + y);
+    }
+    public static void main(String[] args){
+        Calculator objref = new Calculator();
+        int sum = objref.add(2.13,2.34); // 4.47
+        System.out.println("Sum : "+ sum);
+    }
+}
+From Navaneethan SME to Everyone 05:47 AM
+// run time polymorphism - Method Overriding
+class Animal {
+
+    public void hunt(){
+        System.out.println("Animal's way of hunting...!");
+    }
+}
+
+public class Lion extends Animal {
+
+    public void hunt(){
+        System.out.println("Lion's Way of Hunting..!");
+    }
+
+    public static void main(String[] args){
+       
+        Animal objref = new Lion();
+
+        System.out.println(objref instanceof Animal);  
+        
+        // Runtime Polymorphism
+        objref.hunt(); // Accessing sub class method using super class container
+    }
+}

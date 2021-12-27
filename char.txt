@@ -1,8 +1,0 @@
-public class Program {
-
-     public static void main(String []args{
-        char[] ch={'a','y','e','s','h','a'};
-        String s=new String(ch);
-        System.out.println(s);
-     }
-}

@@ -10,9 +10,10 @@ public class Static {
         int A = sc.nextInt();
         int B =sc.nextInt();
         int C =A*B;
-        if(A>0 && B>0) 
+        if(A>0 && B>0) {
         System.out.println(C);
-        else 
+        }
+        else{ 
         System.out.println("Invaild measurement");
     }
 }

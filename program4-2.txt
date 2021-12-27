@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Program2{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String A=sc.next();
+        
+        int startingIndex=sc.nextInt();
+        int endIndex=sc.nextInt();
+        sc.close();
+        System.out.println(A.substring(startingIndex,endIndex));
+    }
+}
+
+
+output:
+ayesha
+4
+5
+h

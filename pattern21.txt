@@ -1,0 +1,18 @@
+public class Program5{
+public static void main(String[] args){
+   char k='A'; 
+ for(char i='A'; i<='E'; i++){
+            for(char j=i; j>='A'; j--){
+                System.out.print((k++)+" ");
+        }
+        
+            System.out.println();
+        } 
+     }
+}
+
+A 
+B C 
+D E F 
+G H I J 
+K L M N O 

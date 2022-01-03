@@ -13,8 +13,6 @@ public class Pattern1of6{
         } 
      }
 }
-
-
 1 
 1 2 
 1 2 3 

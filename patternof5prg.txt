@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Patternof5{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        for (int i=1; i<=n; i++){
+            for(int j=i; j<n; j++){
+                System.out.print(" ");
+            }
+       for(m=1; m<=i; m++){
+           System.out.print(m+ " ");
+       }
+        
+          System.out.println();  
+        }
+    }
+}
+    1 
+   1 2 
+  1 2 3 
+ 1 2 3 4 
+1 2 3 4 5 

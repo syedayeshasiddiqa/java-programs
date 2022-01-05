@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ public class Exception2{
+    
+     public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+            try{
+                int n=sc.nextInt();
+                int k=sc.nextInt();
+                int g=sc.nextInt();
+        System.out.println((n+k)/g);
+            }
+            catch(ArithmeticException e){
+                System.out.println("arithmetic expression"+e.getMessage());
+            }
+          finally{
+              System.out.println("created finally");
+          }
+     }
+}
+output:
+arithmetic expression/ by zero
+created finally

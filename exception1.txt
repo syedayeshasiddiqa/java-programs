@@ -1,0 +1,26 @@
+ public class Test{
+    
+     public static void main(String []args){
+            int n=5 / 0;
+            System.out.println("ayesha");
+
+     }
+}
+
+output:
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at Test.main(Test.java:5)
+ public class Test{
+    
+     public static void main(String []args){
+        try{
+            int n=5 / 0;
+            System.out.println("ayesha");
+        }
+        catch(ArithmeticException e){
+            System.out.println("resolved answer"+ e.getMessage());
+        }
+
+     }
+}
+resolved answer/ by zero

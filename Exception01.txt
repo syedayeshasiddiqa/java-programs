@@ -1,0 +1,35 @@
+import java.util.Scanner;
+ public class Exception1{
+    
+     public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            int k=sc.nextInt();
+            int g=sc.nextInt();
+        System.out.println((n+k)/g);
+    
+
+     }
+}
+output:
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at Exception1.main(Exception1.java:9)
+import java.util.Scanner;
+ public class Exception1{
+    
+     public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+            try{
+                int n=sc.nextInt();  // 2
+                int k=sc.nextInt();  // 5
+                int g=sc.nextInt();  // 0
+        System.out.println((n+k)/g);
+            }
+            catch(ArithmeticException e){
+                System.out.println("arithmetic expression"+e.getMessage());
+            }
+
+     }
+}
+output:
+arithmetic expression/ by zero

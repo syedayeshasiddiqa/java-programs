@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Program{
+public static void main(String[] args){
+  Scanner sc=new Scanner(System.in);
+  int a=sc.nextInt();
+  String dummy=sc.nextLine();
+  String b=sc.nextLine();
+  Double c=sc.nextDouble();
+  System.out.println("int:"+a);
+  System.out.println("String:"+b);
+  System.out.println("Double:"+c);
+  }
+  }
+  output:
+  int:42
+  String:"Happy Learning"
+  Double:3.145

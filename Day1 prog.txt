@@ -1,37 +1,26 @@
 import java.util.*;
 public class Day1{
-
-     public static void main(String[] args)  {
+    public static void main(String[] args)  {
         Scanner sc = new Scanner(System.in);
         for(int i=0; i<3; i++){
             String N=sc.next( );
             String B=sc.next( );
             if(N.length()<8){
-    System.out.print(N+"  ");
-    
-            }
-            else{
+               System.out.print(N+"  ");
+            }else{
                 System.out.print(B+" ");
-            
-            }
-            if(B.length()<3){
+            }if(B.length()<3){
                 if(B.length()<2){
                     System.out.println("00"+B);
-                    
-                }
-                else{
+                }else{
                     System.out.println("0"+B);
                 }
-            }
-                else{
+            }else{
                     System.out.println(B);
-                }
-                
-                
-            }
-                
-            }
+             }
+        }
      }
+}
 
 
 

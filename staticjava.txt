@@ -9,11 +9,12 @@ public class Static {
         Scanner sc = new Scanner(System.in);
         int A = sc.nextInt();
         int B =sc.nextInt();
-        int C =A*B;
         if(A>0 && B>0) {
+        int C =A*B;
         System.out.println(C);
         }
         else{ 
         System.out.println("Invaild measurement");
+        }
     }
 }
